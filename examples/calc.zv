@@ -1,0 +1,34 @@
+// this is a comment
+
+var a: int = 3
+var b = 2
+
+var sum = a + b // int:5
+var dif = a - b // int:1
+var pro = a * b // int:6
+var quo = a / b // float:1.5
+var mod = a % b // int:1
+var pow = a ^ b // int:9
+
+var complex_expr = (a+b)*(a-b)^(a/b)
+
+/// this is documentation
+/// Markdown syntax can be used in documentation
+/// # LATEX extension
+/// accpects LATEX expressions in quotation `@Latex""`
+/// This will be not implemented in `DreamLang V2` Java Edition
+
+var latex_expr_1 = @Latex"\frac{3}{4}" // float:0.75
+var latex_expr_2 = @Latex"$sum" // int:5, variables in the non-Latex block can be use by adding a `$`
+
+/// `@Latex""` only supports single-line expressions with +, -, *, /, (), %, ^, \frac{}{}, $varname, \lfoor \rfloor, \lceil \rceil, \land, \lor, \lnot, =, \neq, \leq, \geq, \in and interval expressions
+
+var latex_expr_3 = @Latex"$quo = 3" // bool:false
+var latex_expr_4 = @Latex"$pow \leq 1234" // bool:true
+
+val pi = 3.14 // a constant can be declared with keyword `val`
+
+var r: float = 2.5
+
+var area = pi * r ^ 2
+
